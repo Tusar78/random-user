@@ -7,10 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random User</title>
 
+    <!-- Connect Box Icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Connect external style file -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <header class="header">
+      <h1>Random User Generator</h1>
+    </header>
+    <section class="random-user">
+      <div class="user__container">
+        <div class="user__header"></div>
+        <div class="user__icon">
+          <img
+            class="user__photo"
+            id="user-photo"
+            src="./assets/img/white.png"
+            alt="Random user icon"
+          />
+          <button class="user__changer" onclick="randomUser()">
+            <i class="bx bx-loader-alt"></i> New
+          </button>
+        </div>
+        <div class="user__details">
+          <div class="user__description">
+            <p id="user-sub">Hi, I am</p>
+            <h3 id="user-name">...</h3>
+          </div>
+          <div class="user__buttons" id="btn-name">
+            <button class="btn btn--name">
+              <i class="bx bx-user"></i>
+              Name
+            </button>
+            <button class="btn btn--birth" id="btn-birth">
+              <i class="bx bx-notepad"></i>
+              Date of Birth
+            </button>
+            <button class="btn btn--number">
+              <i class="bx bx-phone-call"></i>
+              Phone Number
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <a class="social" href="https://twitter.com/Tusar78" target="__blank"
+        >@Tusar78</a
+      >
+    </footer>
+
     <!-- Connect external js file -->
     <script src="./assets/js/app.js"></script>
   </body>
